@@ -1,16 +1,79 @@
-# React + Vite
+<img width="1920" height="917" alt="image" src="https://github.com/user-attachments/assets/8ef682f7-b529-4421-994d-68d52cf806fe" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# 🧾 Inventory Management System (Redux Toolkit)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+An **Inventory Management System** built with **React**, **Redux Toolkit**, and **Vite**.
+This application allows users to **add, view, edit, and delete products**, while automatically calculating the total price based on quantity and unit price.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+* ➕ Add new products
+* ✏️ Edit existing products
+* 🗑️ Delete products
+* 📦 Manage product quantity and category
+* 💰 Automatically calculate total price
+* ⚡ Fast development with Vite
+* 🧠 Centralized state management using Redux Toolkit
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+* **React**
+* **Redux Toolkit**
+* **Vite**
+* **JavaScript (ES6+)**
+* **CSS**
+
+---
+
+## 📂 Project Structure
+
+```bash
+05-Redux-Builder/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── ProductForm.jsx
+│   │   └── ProductList.jsx
+│   ├── features/
+│   │   └── product/
+│   │       └── productSlice.js
+│   ├── store/
+│   │   └── store.js
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+## 🧠 Redux Logic Overview
+
+* **productSlice.js**
+
+  * Manages product state
+  * Handles actions: add, update, delete
+* **store.js**
+
+  * Configures Redux store using `configureStore`
+* **useSelector & useDispatch**
+
+  * Used for accessing and modifying global state
+
+---
+
+## 📈 Future Improvements
+
+* 🔍 Search & filter products
+* 💾 Persist data using localStorage or backend
+* 📊 Dashboard analytics
+* 🔐 Authentication & role-based access
+
+
